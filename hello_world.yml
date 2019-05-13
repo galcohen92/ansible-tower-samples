@@ -1,15 +1,7 @@
 ---
-- name: Get nonce from vault
-  uri:
-    url:  http://{{ vault_hostname }}/v1/sys/generate-root/attempt
-    method: GET
-    status_code: 200
-    body_format: json
-    return_content: yes
-  register: attempt_info
-  become: no
-  when:
-  - unsealkey is defined
-  tags:
-  - never
-  - generate_root_token
+- name: Hello World Sample
+  hosts: all
+  tasks:
+  - name: Hello Message
+    debug:
+      msg: "Hello World!! {{ vault_hostname }}"
