@@ -1,2 +1,3 @@
 all:
-  vault_hostname: test.com
+  vars:
+    vault_hostname: test.com
