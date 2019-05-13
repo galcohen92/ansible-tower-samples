@@ -1,0 +1,2 @@
+all:
+  vault_hostname: test.com
