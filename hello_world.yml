@@ -3,8 +3,7 @@
   hosts: all
   gather_facts: false
   roles:
-  - role: vault
-    tags: vault
+  - role: load-env
   run_once: true
   tags:
   - never
@@ -15,7 +14,6 @@
   gather_facts: false
   roles:
   - role: vault
-    tags: vault
   run_once: true
   tags:
   - never
