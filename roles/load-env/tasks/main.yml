@@ -1,0 +1,5 @@
+---
+- name: load dev-sandbox
+  vars:
+    vault_hostname: test.succeed
+  tags: dev-sandbox

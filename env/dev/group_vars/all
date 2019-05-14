@@ -1,2 +1,0 @@
-# docker registry settings
-test_text: http://0.0.0.0:8200/v1/sys/generate-root/attempt

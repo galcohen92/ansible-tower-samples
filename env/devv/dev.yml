@@ -1,3 +1,0 @@
-all:
-  vars:
-    vault_hostname: test.com
