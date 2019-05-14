@@ -2,7 +2,7 @@
 - name: Provide Key Share to Generate Root For FSS Vault
   hosts: all
   vars_files:
-    - "{{ domain }}-{{ env }}.yml"
+    - "vars/{{ domain }}/{{ env }}.yml"
   gather_facts: false
   roles:
   - role: vault
