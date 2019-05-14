@@ -1,10 +1,4 @@
 ---
-- name: Load Environment
-  include_vars: "{{ domain }}-{{ env }}.yml"
-  tags:
-  - never
-  - generate_root_token
-
 - name: Hello World Sample
   debug:
     msg: "Hello World!! {{ test_var }}"

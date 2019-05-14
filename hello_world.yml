@@ -1,16 +1,8 @@
 ---
-- name: Load Environment
-  hosts: all
-  gather_facts: false
-  roles:
-  - role: load-env
-  run_once: true
-  tags:
-  - never
-  - generate_root_token
-
 - name: Provide Key Share to Generate Root For FSS Vault
   hosts: all
+  vars_files:
+    - "{{ domain }}-{{ env }}.yml"
   gather_facts: false
   roles:
   - role: vault
